@@ -3,12 +3,13 @@
 using namespace std;
 int main(){
     int num;
+    string tmp;
     cin>>num;
+    getline(cin,tmp);
     for(int i=0;i<num;i++){
         int len=0;
         char sen[100];
         string sent="";
-        getline(cin,sent);
         getline(cin,sent);
         while(sent[len]!=46){
             char temp;
