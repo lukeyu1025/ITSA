@@ -20,9 +20,9 @@ int main() {
         if(flag==false){cout<<"Input format error."<<endl;}
         else if(flag1==false){cout<<"Input value error."<<endl;}
         else{
-        arrUp[2]=arrUp[0]arrDown[1]+arrUp[1]arrDown[0];
-        arrDown[2]=arrDown[0]arrDown[1];
-        arrUp[3]=arrUp[0]arrUp[1];
+        arrUp[2]=arrUp[0]*arrDown[1]+arrUp[1]*arrDown[0];
+        arrDown[2]=arrDown[0]*arrDown[1];
+        arrUp[3]=arrUp[0]*arrUp[1];
         arrDown[3]=arrDown[0]*arrDown[1];
         for(int j=2;j<=3;j++){
             int num=2;
