@@ -1,3 +1,4 @@
+//WA: 錯誤的结果
 #include <iostream>
 #include <stack>
 using namespace std;
