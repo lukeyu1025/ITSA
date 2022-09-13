@@ -1,3 +1,4 @@
+//無法通過隱藏測資->WA TLE
 #include<iostream>
 #include<cstring>
 #include<cmath>
@@ -30,17 +31,20 @@ int main(){
         cin>>acnt>>pswd;
         while(acnt!=data[num][0]){
             num++;
-            if(num==6){break;}
+            if(num>5){
+                num=99;
+                break;
+            }
         }
-        if(num==6) cout<<"ERROR"<<endl;
+        if(num==99) cout<<"ERROR"<<endl;
         else if(pswd==data[num][1]){
             flag=true;
             cout<<"OK"<<endl;
         }
         else cout<<"ERROR"<<endl;
     }
-    string func;
-    getline(cin,func);
+    string func,temper;
+    getline(cin,temper);
     bool end=false;
     while(end==false){
         getline(cin,func);
@@ -59,11 +63,12 @@ int main(){
             else cout<<"ERROR"<<endl;
         }
         else if(func[0]=='S'){
-            cout<<data[num][2]<<endl;
+                cout<<data[num][2]<<endl;
         }
-        else if(func[0]=='E')end=true;
+        else if(func[0]=='E'){
+                end=true;
+        }
         else cout<<"ERROR"<<endl;
     }
     cout<<"BYE"<<endl;
-    
 }
