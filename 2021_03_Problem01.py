@@ -1,4 +1,3 @@
-import numpy as np
 n=int(input())
 string=input()
 timeline=[0]*24
